@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+        /* Reset mínimo */
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        /* Centrado vertical y horizontal */
+        body {
+            display: flex;
+            align-items: center;
+            /* Centra verticalmente */
+            justify-content: center;
+            /* Centra horizontalmente */
+            min-height: 100vh;
+            /* ocupa toda la altura de la ventana */
+            padding: 20px;
+            background: #fff;
+            /* si quieres un color, cámbialo */
+        }
+
+        /* Contenedor central */
+        .container {
+            width: 100%;
+            max-width: 640px;
+            text-align: center;
+            padding: 24px;
+            border-radius: 8px;
+            /* border: 1px solid #e0e0e0;  Opcional */
+            /* box-shadow: 0 6px 18px rgba(0,0,0,0.06); Opcional */
+        }
+
+        h2 {
+            margin: 0 0 8px;
+            font-size: 1.25rem;
+        }
+
+        h3 {
+            margin: 0 0 18px;
+            font-weight: 500;
+            font-size: 1rem;
+            color: #444;
+        }
+
+        form {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        input[type="text"] {
+            padding: 10px 12px;
+            font-size: 1rem;
+            width: 320px;
+            max-width: 100%;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Programa de encriptacion para licencia de caja.</h2>
+        <h3>Hacerlo mensualmente y entregarlo antes de que cambie el mes.</h3>
+
+        <form action="encriptar.php" method="post">
+            <input type="text" id="numero" name="numero" placeholder="mes siguiente..." autofocus>
+            <button type="submit">GENERAR</button>
+        </form>
+
+        <a href="../desencriptar/inicio.php">DESENCRIPTAR</a>
+
+    </div>
+</body>
+
+</html>
